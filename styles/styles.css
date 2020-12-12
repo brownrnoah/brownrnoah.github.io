@@ -1,0 +1,199 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(beige,white);
+    background-repeat: no-repeat;
+}
+#formdiv {
+    display: none;
+}
+
+table {
+    border-spacing: 8px;
+}
+td, tr {
+    border: 2px solid;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+body input {
+    width: 30px;
+}
+
+form {
+    width: 600px;
+    background-color: bisque;
+    font-size: 20px;
+    background-image: linear-gradient(lightblue,white);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#race {
+    font-size: 15px;
+}
+
+#class {
+    font-size: 15px;
+}
+
+
+#finalizecharacter {
+    position: relative;
+	display: inline-block;
+	padding: 3px 15px;
+	background-image: linear-gradient(green,lightgreen);
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+	font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 7px;
+    left: 100px
+}
+
+#namebox {
+    width: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+#statsbox {
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border: solid 1px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-image: linear-gradient(beige,white);
+}
+
+#statsbox div {
+    padding-top: 10px
+}
+
+#racebox {
+    display: flex;
+    width: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+#namebox {
+    display: flex;
+}
+
+#nameerrorbox {
+    display: none;
+    font-size: 12px;
+    color: red;
+    padding-top: 5px;
+    margin-left: 20px;
+}
+
+#raceerrorbox {
+    display: none;
+    font-size: 12px;
+    color: red;
+    padding-top: 5px;
+    margin-left: 20px;
+}
+
+#classerrorbox {
+    display: none;
+    font-size: 12px;
+    color: red;
+    padding-top: 5px;
+    margin-left: 20px;
+}
+
+#classbox {
+    display: flex;
+    width: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+#genderbox {
+    width: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+#righthandedbox {
+    width: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+#finalizationbox  {
+    width: 600px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#cancelbutton {
+    position: relative;
+	display: inline-block;
+	padding: 3px 15px;
+	background-image: linear-gradient(darkred,red);
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+	font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 7px;
+    left: 300px;
+}
+
+#reroll {
+    position: relative;
+	display: inline-block;
+	padding: 3px 15px;
+	background-image: linear-gradient(blue,cyan);
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+	font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 7px;
+    left: 100px;
+}
+
+table {
+    width: 600px;
+}
+
+#charactername {
+    width: 60px;
+}
+
+#namebox {
+    padding-left: auto;
+    padding-right: auto;
+}
+
+#createnewcharacter {
+    position: relative;
+	display: inline-block;
+	padding: 3px 15px;
+	background-image: linear-gradient(purple,lavender);
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+	font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 7px;
+    margin-left: 10px;
+}
+
+#maindiv {
+    margin-top: 20px;
+}

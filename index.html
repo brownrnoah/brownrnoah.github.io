@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple RPG Character Generator</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js"></script>
+</head>
+<body>
+    <div id="maindiv">
+        <h1>Noah's RPG Character Creator</h1>
+        <button id="createnewcharacter">Create New Character</button>
+        <div id="formdiv">
+            <form action="">
+                <div>
+                    <div id="namebox">
+                        <label for="charactername">Character Name:</label>
+                        <input type="text" id="charactername" name="charactername">
+                        <div id="nameerrorbox">No name given!</div>
+                    </div>
+                    <div id="statsbox">
+                        <div id="strengthbox">
+                            <label for="strength">Strength:</label>
+                            <input type="number" id="strength" name="strength" readonly>
+                        </div>
+                        <div id="dexteritybox">
+                            <label for="dexterity">Dexterity:</label>
+                            <input type="number" id="dexterity" name="dexterity" readonly>
+                        </div>
+                        <div id="constitutionbox">
+                            <label for="constitution">Constitution:</label>
+                            <input type="number" id="constitution" name="constitution" readonly>
+                        </div>
+                        <div id="intelligencebox">
+                            <label for="intelligence">Intelligence:</label>
+                            <input type="number" id="intelligence" name="intelligence" readonly>
+                        </div>
+                        <div id="wisdombox">
+                            <label for="wisdom">Wisdom:</label>
+                            <input type="number" id="wisdom" name="wisdom" readonly>
+                        </div>
+                        <div id="charismabox">
+                            <label for="charisma">Charisma:</label>
+                            <input type="number" id="charisma" name="charisma" readonly>
+                        </div>
+                        <div id="buttonbox">
+                            <button type="button" id="reroll">Reroll</button>
+                        </div>
+                    </div>
+                    <div id="characterattributes">
+                        <div id="racebox">
+                            <label for="race">Race:</label>
+                            <select name="race" id="race" required>
+                                <option value="" disabled selected hidden>Select your race</option>
+                                <option value="Human">Human</option>
+                                <option value="Elf">Elf</option>
+                                <option value="Dwarf">Dwarf</option>
+                                <option value="Halfling">Halfling</option>
+                            </select>
+                            <div id="raceerrorbox">No race selected!</div>
+                        </div>
+                        <div id="classbox">
+                            <label for="class">Class:</label>
+                            <select name="class" id="class" required>
+                                <option value="" disabled selected>Select your class</option>
+                                <option value="Swordsman">Swordsman</option>
+                                <option value="Mage">Mage</option>
+                                <option value="Knight">Knight</option>
+                                <option value="Assasin">Assasin</option>
+                                <option value="Thief">Thief</option>
+                                <option value="Archer">Archer</option>
+                            </select>
+                            <div id="classerrorbox">No class selected!</div>
+                        </div>
+                        <div id="genderbox">
+                            <label for="genderbox">Gender:</label>
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div id="righthandedbox">
+                            <label for="righthanded">Right Handed Character:</label>
+                            <input type="checkbox" id="righthanded" name="righthanded">
+                        </div>
+                        <div id="finalizationbox">
+                            <button type="button" id="finalizecharacter">Create</button>
+                            <button type="button" id="cancelbutton">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="listdiv">
+            <table id="charactertable">
+                <tr>
+                    <td><strong>Name</strong></td>
+                    <td><strong>Race</strong></td>
+                    <td><strong>Class</strong></td>
+                    <td><strong>Gender</strong></td>
+                    <td><strong>Right Handed</strong></td>
+                    <td><strong>STR</strong></td>
+                    <td><strong>DEX</strong></td>
+                    <td><strong>CON</strong></td>
+                    <td><strong>INT</strong></td>
+                    <td><strong>WIS</strong></td>
+                    <td><strong>Cha</strong></td>
+                </tr>
+                <tr>
+                    <td>Frodo</td>
+                    <td>Halfling</td>
+                    <td>Thief</td>
+                    <td>Male</td>
+                    <td>YES</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>15</td>
+                    <td>12</td>
+                    <td>14</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Gimli</td>
+                    <td>Dwarf</td>
+                    <td>Warrior</td>
+                    <td>Male</td>
+                    <td>YES</td>
+                    <td>15</td>
+                    <td>4</td>
+                    <td>17</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Eowyn</td>
+                    <td>Human</td>
+                    <td>Warrior</td>
+                    <td>Female</td>
+                    <td>NO</td>
+                    <td>2</td>
+                    <td>11</td>
+                    <td>10</td>
+                    <td>13</td>
+                    <td>12</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>Legolas</td>
+                    <td>Elf</td>
+                    <td>Archer</td>
+                    <td>Male</td>
+                    <td>NO</td>
+                    <td>12</td>
+                    <td>18</td>
+                    <td>11</td>
+                    <td>16</td>
+                    <td>15</td>
+                    <td>12</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
