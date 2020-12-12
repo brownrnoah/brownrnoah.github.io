@@ -197,3 +197,7 @@ table {
 #maindiv {
     margin-top: 20px;
 }
+
+#listdiv {
+    display: block;
+}

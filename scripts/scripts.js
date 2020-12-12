@@ -48,6 +48,7 @@ window.onload = function(){
 //}
 
 function createnewcharacter(){
+    document.getElementById("listdiv").style.display = "none"
     document.getElementById("formdiv").style.display = "block"
     document.getElementById("createnewcharacter").style.display = "none"
     strength = rollDice()
@@ -84,6 +85,7 @@ function reroll(){
 function cancelbutton(){
     document.getElementById("formdiv").style.display = "none"
     document.getElementById("createnewcharacter").style.display = "block"
+    document.getElementById("listdiv").style.display = "block"
 }  
 
 function finalizecharacter(){
@@ -122,6 +124,7 @@ function finalizecharacter(){
         document.getElementById("righthanded").checked = false
         document.getElementById("race").value = ""
         document.getElementById("class").value = ""
+        document.getElementById("listdiv").style.display = "block"
     }
     else {
         if (has_name == false){
