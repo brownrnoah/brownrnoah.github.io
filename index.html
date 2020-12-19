@@ -12,6 +12,7 @@
         <div id="formdiv">
             <form action="">
                 <div>
+                    <div id="windowBanner">Character Creation Window</div>
                     <div id="namebox">
                         <label for="charactername">Character Name:</label>
                         <input type="text" id="charactername" name="charactername">
@@ -68,6 +69,7 @@
                                 <option value="Assasin">Assasin</option>
                                 <option value="Thief">Thief</option>
                                 <option value="Archer">Archer</option>
+                                <option value="Warrior">Warrior</option>
                             </select>
                             <div id="classerrorbox">No class selected!</div>
                         </div>
@@ -84,6 +86,7 @@
                         </div>
                         <div id="finalizationbox">
                             <button type="button" id="finalizecharacter">Create</button>
+                            <button type="button" id="finalizeEdit">Save</button>
                             <button type="button" id="cancelbutton">Cancel</button>
                         </div>
                     </div>
@@ -91,73 +94,7 @@
             </form>
         </div>
         <div id="listdiv">
-            <table id="charactertable">
-                <tr>
-                    <td><strong>Name</strong></td>
-                    <td><strong>Race</strong></td>
-                    <td><strong>Class</strong></td>
-                    <td><strong>Gender</strong></td>
-                    <td><strong>Right Handed</strong></td>
-                    <td><strong>STR</strong></td>
-                    <td><strong>DEX</strong></td>
-                    <td><strong>CON</strong></td>
-                    <td><strong>INT</strong></td>
-                    <td><strong>WIS</strong></td>
-                    <td><strong>Cha</strong></td>
-                </tr>
-                <tr>
-                    <td>Frodo</td>
-                    <td>Halfling</td>
-                    <td>Thief</td>
-                    <td>Male</td>
-                    <td>YES</td>
-                    <td>3</td>
-                    <td>5</td>
-                    <td>15</td>
-                    <td>12</td>
-                    <td>14</td>
-                    <td>18</td>
-                </tr>
-                <tr>
-                    <td>Gimli</td>
-                    <td>Dwarf</td>
-                    <td>Warrior</td>
-                    <td>Male</td>
-                    <td>YES</td>
-                    <td>15</td>
-                    <td>4</td>
-                    <td>17</td>
-                    <td>8</td>
-                    <td>7</td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <td>Eowyn</td>
-                    <td>Human</td>
-                    <td>Warrior</td>
-                    <td>Female</td>
-                    <td>NO</td>
-                    <td>2</td>
-                    <td>11</td>
-                    <td>10</td>
-                    <td>13</td>
-                    <td>12</td>
-                    <td>14</td>
-                </tr>
-                <tr>
-                    <td>Legolas</td>
-                    <td>Elf</td>
-                    <td>Archer</td>
-                    <td>Male</td>
-                    <td>NO</td>
-                    <td>12</td>
-                    <td>18</td>
-                    <td>11</td>
-                    <td>16</td>
-                    <td>15</td>
-                    <td>12</td>
-                </tr>
-            </table>
+            <table id="charactertable"></table>
         </div>
     </div>
 </body>

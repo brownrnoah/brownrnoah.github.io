@@ -40,8 +40,8 @@ form {
 
 
 #finalizecharacter {
-    position: relative;
-	display: inline-block;
+    position: absolute;
+	display: block;
 	padding: 3px 15px;
 	background-image: linear-gradient(green,lightgreen);
 	text-decoration: none;
@@ -50,7 +50,21 @@ form {
 	font-family: sans-serif;
     font-weight: bold;
     border-radius: 7px;
-    left: 100px
+    left: 555px
+}
+
+#finalizeEdit {
+    display: none;
+    position: absolute;
+	padding: 3px 15px;
+	background-image: linear-gradient(green,lightgreen);
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+	font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 7px;
+    left: 555px
 }
 
 #namebox {
@@ -183,7 +197,7 @@ table {
 #createnewcharacter {
     position: relative;
 	display: inline-block;
-	padding: 3px 15px;
+	padding: 7px 15px;
 	background-image: linear-gradient(purple,lavender);
 	text-decoration: none;
 	color: black;
@@ -200,4 +214,56 @@ table {
 
 #listdiv {
     display: block;
+}
+
+.edit {
+    position: relative;
+	display: inline-block;
+	padding: 3px 15px;
+	background-image: linear-gradient(green,lightgreen);
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+	font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.delete {
+    position: relative;
+	display: inline-block;
+	padding: 3px 15px;
+	background-image: linear-gradient(darkred,red);
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+	font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+#windowBanner {
+    padding-left: 150px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 25px;
+}
+
+#editdelete {
+    border: none;
+}
+
+#labels {
+    background-image: linear-gradient(rgb(24,24,24),rgb(104,104,104));
+    color: white;
+    
+}
+
+#labels td {
+    padding: 5px;
+}
+
+#stats {
+    background-color: white;
+    font-weight: bold;
 }
